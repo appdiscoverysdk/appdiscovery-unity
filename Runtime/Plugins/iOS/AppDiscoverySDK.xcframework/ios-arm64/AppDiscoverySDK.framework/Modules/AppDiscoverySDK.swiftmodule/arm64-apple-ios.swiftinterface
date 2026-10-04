@@ -1,0 +1,41 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AppDiscoverySDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import AdSupport
+@_exported import AppDiscoverySDK
+import AppTrackingTransparency
+import CFNetwork
+import CoreTelephony
+import Foundation
+import Network
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum AppDiscovery {
+  public static func create(host: Swift.String, appId: Swift.String, sdkKey: Swift.String, playerId: Swift.String, trackerHost: Swift.String? = nil) throws -> AppDiscoverySDK.Offerwall
+  public static func syncPendingRewards(host: Swift.String, appId: Swift.String, sdkKey: Swift.String, playerId: Swift.String, trackerHost: Swift.String? = nil, callback: (([[Swift.String : Any?]]) -> Swift.Void)? = nil) throws
+}
+public enum AppDiscoveryError : Swift.Error, Swift.Equatable {
+  case hostRequired(setting: Swift.String)
+  case invalidHost(setting: Swift.String)
+  public static func == (a: AppDiscoverySDK.AppDiscoveryError, b: AppDiscoverySDK.AppDiscoveryError) -> Swift.Bool
+}
+extension AppDiscoverySDK.AppDiscoveryError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Offerwall {
+  public var tags: [Swift.String : Any]
+  public var options: [Swift.String : Any]
+  public var onReward: (([Swift.String : Any?]) -> Swift.Void)?
+  public var onClose: (() -> Swift.Void)?
+  public func launch(viewController: UIKit.UIViewController)
+  public func syncPendingRewards(callback: (([[Swift.String : Any?]]) -> Swift.Void)? = nil)
+  @objc deinit
+}

@@ -1,0 +1,30 @@
+{
+  "name": "com.appdiscoverysdk.sdk",
+  "version": "1.0.0",
+  "displayName": "AppDiscovery SDK",
+  "description": "AppDiscovery offerwall SDK for Unity (Android and iOS). Configure it with the host of your own offerwall.",
+  "unity": "2021.3",
+  "documentationUrl": "https://github.com/appdiscoverysdk/appdiscovery-unity#readme",
+  "changelogUrl": "https://github.com/appdiscoverysdk/appdiscovery-unity/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/appdiscoverysdk/appdiscovery-unity/blob/main/LICENSE",
+  "keywords": [
+    "appdiscovery",
+    "offerwall",
+    "monetization",
+    "rewards",
+    "unity",
+    "games"
+  ],
+  "author": {
+    "name": "AppDiscovery SDK",
+    "url": "https://github.com/appdiscoverysdk"
+  },
+  "samples": [
+    {
+      "displayName": "Basic usage",
+      "description": "Initializes the SDK with a host and shows the offerwall.",
+      "path": "Samples~/BasicUsage"
+    }
+  ],
+  "dependencies": {}
+}

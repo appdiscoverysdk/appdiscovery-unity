@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Resolved by the External Dependency Manager for Unity (EDM4U). -->
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.github.appdiscoverysdk:appdiscovery-android:1.0.0">
+            <repositories>
+                <repository>https://jitpack.io</repository>
+            </repositories>
+        </androidPackage>
+        <androidPackage spec="androidx.core:core-ktx:1.10.1" />
+        <androidPackage spec="com.google.android.gms:play-services-ads-identifier:18.2.0" />
+    </androidPackages>
+</dependencies>

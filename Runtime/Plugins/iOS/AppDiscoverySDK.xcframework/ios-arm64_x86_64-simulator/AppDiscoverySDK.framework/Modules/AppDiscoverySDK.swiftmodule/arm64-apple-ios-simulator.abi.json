@@ -1,0 +1,1569 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AppDiscoverySDK",
+    "printedName": "AppDiscoverySDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppDiscovery",
+        "printedName": "AppDiscovery",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(host:appId:sdkKey:playerId:trackerHost:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Offerwall",
+                "printedName": "AppDiscoverySDK.Offerwall",
+                "usr": "s:15AppDiscoverySDK9OfferwallC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AppDiscoverySDK0aB0O6create4host5appId6sdkKey06playerG011trackerHostAA9OfferwallCSS_S4SSgtKFZ",
+            "mangledName": "$s15AppDiscoverySDK0aB0O6create4host5appId6sdkKey06playerG011trackerHostAA9OfferwallCSS_S4SSgtKFZ",
+            "moduleName": "AppDiscoverySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncPendingRewards",
+            "printedName": "syncPendingRewards(host:appId:sdkKey:playerId:trackerHost:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([[Swift.String : Any?]]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([[Swift.String : Any?]]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : Any?]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any?]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Any?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AppDiscoverySDK0aB0O18syncPendingRewards4host5appId6sdkKey06playerI011trackerHost8callbackySS_S4SSgySaySDySSypSgGGcSgtKFZ",
+            "mangledName": "$s15AppDiscoverySDK0aB0O18syncPendingRewards4host5appId6sdkKey06playerI011trackerHost8callbackySS_S4SSgySaySDySSypSgGGcSgtKFZ",
+            "moduleName": "AppDiscoverySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15AppDiscoverySDK0aB0O",
+        "mangledName": "$s15AppDiscoverySDK0aB0O",
+        "moduleName": "AppDiscoverySDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppDiscoveryError",
+        "printedName": "AppDiscoveryError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "hostRequired",
+            "printedName": "hostRequired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppDiscoverySDK.AppDiscoveryError.Type) -> (Swift.String) -> AppDiscoverySDK.AppDiscoveryError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AppDiscoverySDK.AppDiscoveryError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppDiscoveryError",
+                        "printedName": "AppDiscoverySDK.AppDiscoveryError",
+                        "usr": "s:15AppDiscoverySDK0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(setting: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppDiscoverySDK.AppDiscoveryError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppDiscoveryError",
+                        "printedName": "AppDiscoverySDK.AppDiscoveryError",
+                        "usr": "s:15AppDiscoverySDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15AppDiscoverySDK0aB5ErrorO12hostRequiredyACSS_tcACmF",
+            "mangledName": "$s15AppDiscoverySDK0aB5ErrorO12hostRequiredyACSS_tcACmF",
+            "moduleName": "AppDiscoverySDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidHost",
+            "printedName": "invalidHost",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppDiscoverySDK.AppDiscoveryError.Type) -> (Swift.String) -> AppDiscoverySDK.AppDiscoveryError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AppDiscoverySDK.AppDiscoveryError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppDiscoveryError",
+                        "printedName": "AppDiscoverySDK.AppDiscoveryError",
+                        "usr": "s:15AppDiscoverySDK0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(setting: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppDiscoverySDK.AppDiscoveryError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppDiscoveryError",
+                        "printedName": "AppDiscoverySDK.AppDiscoveryError",
+                        "usr": "s:15AppDiscoverySDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15AppDiscoverySDK0aB5ErrorO11invalidHostyACSS_tcACmF",
+            "mangledName": "$s15AppDiscoverySDK0aB5ErrorO11invalidHostyACSS_tcACmF",
+            "moduleName": "AppDiscoverySDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppDiscoveryError",
+                "printedName": "AppDiscoverySDK.AppDiscoveryError",
+                "usr": "s:15AppDiscoverySDK0aB5ErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppDiscoveryError",
+                "printedName": "AppDiscoverySDK.AppDiscoveryError",
+                "usr": "s:15AppDiscoverySDK0aB5ErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AppDiscoverySDK0aB5ErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15AppDiscoverySDK0aB5ErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "AppDiscoverySDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15AppDiscoverySDK0aB5ErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s15AppDiscoverySDK0aB5ErrorO16errorDescriptionSSSgvp",
+            "moduleName": "AppDiscoverySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK0aB5ErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s15AppDiscoverySDK0aB5ErrorO16errorDescriptionSSSgvg",
+                "moduleName": "AppDiscoverySDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15AppDiscoverySDK0aB5ErrorO",
+        "mangledName": "$s15AppDiscoverySDK0aB5ErrorO",
+        "moduleName": "AppDiscoverySDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Offerwall",
+        "printedName": "Offerwall",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tags",
+            "printedName": "tags",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15AppDiscoverySDK9OfferwallC4tagsSDySSypGvp",
+            "mangledName": "$s15AppDiscoverySDK9OfferwallC4tagsSDySSypGvp",
+            "moduleName": "AppDiscoverySDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK9OfferwallC4tagsSDySSypGvg",
+                "mangledName": "$s15AppDiscoverySDK9OfferwallC4tagsSDySSypGvg",
+                "moduleName": "AppDiscoverySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK9OfferwallC4tagsSDySSypGvs",
+                "mangledName": "$s15AppDiscoverySDK9OfferwallC4tagsSDySSypGvs",
+                "moduleName": "AppDiscoverySDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK9OfferwallC4tagsSDySSypGvM",
+                "mangledName": "$s15AppDiscoverySDK9OfferwallC4tagsSDySSypGvM",
+                "moduleName": "AppDiscoverySDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "options",
+            "printedName": "options",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15AppDiscoverySDK9OfferwallC7optionsSDySSypGvp",
+            "mangledName": "$s15AppDiscoverySDK9OfferwallC7optionsSDySSypGvp",
+            "moduleName": "AppDiscoverySDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK9OfferwallC7optionsSDySSypGvg",
+                "mangledName": "$s15AppDiscoverySDK9OfferwallC7optionsSDySSypGvg",
+                "moduleName": "AppDiscoverySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK9OfferwallC7optionsSDySSypGvs",
+                "mangledName": "$s15AppDiscoverySDK9OfferwallC7optionsSDySSypGvs",
+                "moduleName": "AppDiscoverySDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK9OfferwallC7optionsSDySSypGvM",
+                "mangledName": "$s15AppDiscoverySDK9OfferwallC7optionsSDySSypGvM",
+                "moduleName": "AppDiscoverySDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onReward",
+            "printedName": "onReward",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Any?]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any?]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any?]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Any?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15AppDiscoverySDK9OfferwallC8onRewardySDySSypSgGcSgvp",
+            "mangledName": "$s15AppDiscoverySDK9OfferwallC8onRewardySDySSypSgGcSgvp",
+            "moduleName": "AppDiscoverySDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(([Swift.String : Any?]) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "([Swift.String : Any?]) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any?]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Any?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK9OfferwallC8onRewardySDySSypSgGcSgvg",
+                "mangledName": "$s15AppDiscoverySDK9OfferwallC8onRewardySDySSypSgGcSgvg",
+                "moduleName": "AppDiscoverySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(([Swift.String : Any?]) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "([Swift.String : Any?]) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any?]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Any?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK9OfferwallC8onRewardySDySSypSgGcSgvs",
+                "mangledName": "$s15AppDiscoverySDK9OfferwallC8onRewardySDySSypSgGcSgvs",
+                "moduleName": "AppDiscoverySDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK9OfferwallC8onRewardySDySSypSgGcSgvM",
+                "mangledName": "$s15AppDiscoverySDK9OfferwallC8onRewardySDySSypSgGcSgvM",
+                "moduleName": "AppDiscoverySDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onClose",
+            "printedName": "onClose",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15AppDiscoverySDK9OfferwallC7onCloseyycSgvp",
+            "mangledName": "$s15AppDiscoverySDK9OfferwallC7onCloseyycSgvp",
+            "moduleName": "AppDiscoverySDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK9OfferwallC7onCloseyycSgvg",
+                "mangledName": "$s15AppDiscoverySDK9OfferwallC7onCloseyycSgvg",
+                "moduleName": "AppDiscoverySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK9OfferwallC7onCloseyycSgvs",
+                "mangledName": "$s15AppDiscoverySDK9OfferwallC7onCloseyycSgvs",
+                "moduleName": "AppDiscoverySDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AppDiscoverySDK9OfferwallC7onCloseyycSgvM",
+                "mangledName": "$s15AppDiscoverySDK9OfferwallC7onCloseyycSgvM",
+                "moduleName": "AppDiscoverySDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "launch",
+            "printedName": "launch(viewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AppDiscoverySDK9OfferwallC6launch14viewControllerySo06UIViewG0C_tF",
+            "mangledName": "$s15AppDiscoverySDK9OfferwallC6launch14viewControllerySo06UIViewG0C_tF",
+            "moduleName": "AppDiscoverySDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncPendingRewards",
+            "printedName": "syncPendingRewards(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([[Swift.String : Any?]]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([[Swift.String : Any?]]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : Any?]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any?]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Any?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AppDiscoverySDK9OfferwallC18syncPendingRewards8callbackyySaySDySSypSgGGcSg_tF",
+            "mangledName": "$s15AppDiscoverySDK9OfferwallC18syncPendingRewards8callbackyySaySDySSypSgGGcSg_tF",
+            "moduleName": "AppDiscoverySDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15AppDiscoverySDK9OfferwallC",
+        "mangledName": "$s15AppDiscoverySDK9OfferwallC",
+        "moduleName": "AppDiscoverySDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CFNetwork",
+        "printedName": "CFNetwork",
+        "declKind": "Import",
+        "moduleName": "AppDiscoverySDK"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/DeviceInfoHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 189,
+      "length": 7,
+      "value": "\"2.0.9\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/JSBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 281,
+      "length": 10,
+      "value": "\"JSBridge\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/Offerwall.swift",
+      "kind": "Dictionary",
+      "offset": 348,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/Offerwall.swift",
+      "kind": "Dictionary",
+      "offset": 439,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallUrls.swift",
+      "kind": "StringLiteral",
+      "offset": 396,
+      "length": 57,
+      "value": "\"^[A-Za-z0-9]([A-Za-z0-9.-]*[A-Za-z0-9])?(:[0-9]{1,5})?$\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallUrls.swift",
+      "kind": "StringLiteral",
+      "offset": 775,
+      "length": 6,
+      "value": "\"host\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 412,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 445,
+      "length": 19,
+      "value": "\"OfferwallActivity\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1549,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1552,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1564,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1567,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1578,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1581,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1593,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1805,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1990,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2069,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2277,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2310,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2385,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2388,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2400,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2403,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2414,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2417,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2429,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/OfferwallViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2461,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/_temp\/appdiscovery_sdk\/project\/Sources\/AppDiscoverySDK\/RewardSyncHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 82,
+      "length": 12,
+      "value": "\"RewardSync\""
+    }
+  ]
+}

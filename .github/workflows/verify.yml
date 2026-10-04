@@ -1,0 +1,58 @@
+# Verifies this package as published: package structure, the C# layer (unit tests
+# plus compile checks of the Android and iOS bridges' C# side), the Android bridge
+# against the real native SDK, and the iOS bridge against the real xcframework.
+# Runs on every push and on demand; free on a public repository.
+# (A device build needs a Unity license and is not part of this check.)
+
+name: Verify
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package structure, metas and bridge contract
+        run: python3 "Tools~/validate_package.py" .
+      - name: No branded strings
+        run: python3 "Tools~/check_neutral.py" .
+
+  csharp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Unit tests
+        run: dotnet test Tests~/AppDiscovery.Tests.csproj
+      - name: The Android bridge's C# side compiles (UNITY_ANDROID)
+        run: dotnet build Tests~/AppDiscovery.Tests.csproj -p:DefineConstants=UNITY_ANDROID -o "$RUNNER_TEMP/android"
+      - name: The iOS bridge's C# side and the editor script compile (UNITY_IOS)
+        run: dotnet build Tests~/AppDiscovery.Tests.csproj -p:DefineConstants=UNITY_IOS -o "$RUNNER_TEMP/ios"
+
+  android-bridge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - run: "Tools~/check_android_bridge.sh"
+
+  ios-bridge:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Type-check the Swift bridge against the bundled xcframework
+        run: |
+          xcrun swiftc -typecheck \
+            -sdk "$(xcrun --sdk iphonesimulator --show-sdk-path)" \
+            -target arm64-apple-ios13.0-simulator \
+            -F Runtime/Plugins/iOS/AppDiscoverySDK.xcframework/ios-arm64_x86_64-simulator \
+            Runtime/Plugins/iOS/AppDiscoveryUnityBridge.swift

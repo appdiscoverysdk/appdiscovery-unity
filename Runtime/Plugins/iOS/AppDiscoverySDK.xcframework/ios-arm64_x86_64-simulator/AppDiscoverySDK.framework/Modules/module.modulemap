@@ -1,0 +1,6 @@
+framework module AppDiscoverySDK {
+  umbrella header "AppDiscoverySDK.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Unit tests for the C# layer of the package, run with plain `dotnet test` (no Unity
+    needed): the Runtime sources are compiled together with minimal stand-ins for the
+    Unity types the package uses (UnityStubs/). Tests~ is ignored by Unity.
+
+    Compile-checks for the platform bridges build the same sources with a platform symbol:
+      dotnet build -p:DefineConstants=UNITY_ANDROID
+      dotnet build -p:DefineConstants=UNITY_IOS
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>AppDiscovery.Tests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../Runtime/Scripts/**/*.cs" LinkBase="Runtime" />
+    <Compile Include="../Editor/*.cs" LinkBase="Editor" />
+    <Content Include="../package.json" Link="package.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+</Project>
